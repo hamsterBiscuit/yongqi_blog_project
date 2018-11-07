@@ -1,4 +1,8 @@
-# 阿里云安装配置 Nginx
+---
+title: 阿里云安装配置 Nginx
+date: 2018-11-07 11:37:43
+type: ""
+---
 
 > 转载自 [如何在阿里云Centos下安装Nginx](https://www.aliyun.com/jiaocheng/152926.html)
 
@@ -7,6 +11,8 @@ Nginx("engine x")是一款轻量级的HTTP和反向代理服务器。相比于Ap
 在Linux下我们需要下载Nginx的源代码包并且手动编译,而不是用包管理工具,例如Yum、Aptitude来安装。因为我们需要在编译时对Nginx进行配置,不得不手动编译,这样也就会依赖一些工具和库文件。
 
 首先,需要安装C语言的编译环境,因为Nginx是C语言编写的。通常大多数Linux都会默认安装GCC,如果没有的话,可以如下安装。
+
+<!-- more -->
 
 **安装make:**
 
@@ -89,5 +95,3 @@ Nginx相关命令:
 由于任何nginx命令都是检查配置文件是否合法,如果配置文件不合法,命令不会执行,killall命令可以避免无法停止Nginx服务。
 
 Nginx配置文件有自己独特的语法,在这里就不展开了。
-
-

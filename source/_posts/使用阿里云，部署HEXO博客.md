@@ -1,8 +1,16 @@
+---
+title: 使用阿里云，部署HEXO博客
+date: 2018-11-07 11:37:43
+type: ""
+---
+
 ## 使用阿里云，部署HEXO博客
 
 > hexo初始化请看这里
 
 在阿里云上如果要使用 hexo -d生成静态文件，git仓库是最合适的，在触发git hook，最后再执行bash命令将文件拷贝到博客网站目录。
+
+<!-- more -->
 
 ### 创建git仓库
 
@@ -34,9 +42,9 @@ chmod 600 /home/git/.ssh/authorized_keys
  chown -R git:git /srv/sample.git
  git init --bare sample.git //本条命令在 /srv 下输入
  ```
- 
+
  5. 禁止git 的 shell 登陆：
- 
+
 文件 /etc/passwd 下有类似一行
 
 `git:x:1001:1001:,,,:/home/git:/bin/bash`
@@ -54,14 +62,14 @@ hint: ~/git-shell-commands should exist and have read and execute access.
 
 则进行这步，
 
-将目录/usr/share/doc/git/contrib/git-shell-commands拷贝到git用户下/home/git/ 
+将目录/usr/share/doc/git/contrib/git-shell-commands拷贝到git用户下/home/git/
 
 `修改所有者chown -R git.git git-shell-commands `
 
-如果该目录下的help和list没有执行权，那么再给它加执行权 
+如果该目录下的help和list没有执行权，那么再给它加执行权
 
 ``` bash
-chmod +x /home/git/git-shell-commands/help 
+chmod +x /home/git/git-shell-commands/help
 chmod +x /home/git/git-shell-commands/list
 ```
 
@@ -85,7 +93,7 @@ deploy:
 ```
 
 ### 插件安装
-  
+
 此插件的作用是执行deploy时，将hexo生成的静态文件提交到_config.yml配置中的deploy.repo地址，即 git@xx.xxx.xx.xxx:/www/blog.git,master。
 
 `npm install hexo-deployer-git --save`
