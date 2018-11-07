@@ -1,7 +1,10 @@
 ---
 title: 使用阿里云，部署HEXO博客
 date: 2018-11-07 11:37:43
-type: ""
+tags:
+  - 阿里云 博客
+categories:
+  - 运维
 ---
 
 ## 使用阿里云，部署HEXO博客

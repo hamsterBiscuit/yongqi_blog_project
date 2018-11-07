@@ -1,7 +1,10 @@
 ---
 title: 阿里云安装配置 Nginx
 date: 2018-11-07 11:37:43
-type: ""
+tags:
+  - 阿里云 nginx
+categories:
+  - 运维
 ---
 
 > 转载自 [如何在阿里云Centos下安装Nginx](https://www.aliyun.com/jiaocheng/152926.html)
