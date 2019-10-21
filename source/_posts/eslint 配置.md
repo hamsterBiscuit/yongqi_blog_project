@@ -1,7 +1,9 @@
 ---
 title: eslint 配置 git commit 前置钩子
 tags:
-  - eslint git RN
+  - eslint
+  - git
+  - RN
 categories:
   - RN
 ---

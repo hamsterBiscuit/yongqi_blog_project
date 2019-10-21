@@ -1,7 +1,8 @@
 ---
 title: 使用 typesafe-actions 创建类型安全的 redux
 tags:
-  - redux RN
+  - redux
+  - RN
 categories:
   - RN
 ---

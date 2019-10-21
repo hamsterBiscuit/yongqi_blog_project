@@ -1,7 +1,8 @@
 ---
 title: react-native 配置 mobx
 tags:
-  - mobx RN
+  - mobx
+  - RN
 categories:
   - RN
 ---

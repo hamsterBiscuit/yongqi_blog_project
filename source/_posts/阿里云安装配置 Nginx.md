@@ -2,7 +2,8 @@
 title: 阿里云安装配置 Nginx
 date: 2018-11-07 11:37:43
 tags:
-  - 阿里云 nginx
+  - 阿里云
+  - nginx
 categories:
   - 运维
 ---
