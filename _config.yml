@@ -80,4 +80,20 @@ theme: next
 deploy:
   type: git
   message: update
-  repo: git@60.205.217.166:/var/git/blog.git,master
+  repo: root@60.205.217.166:/var/git/blog.git,master
+
+ # feed
+# Dependencies: https://github.com/hexojs/hexo-generator-feed
+# plugins: hexo-generate-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: 
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
