@@ -2,6 +2,7 @@
 title: vim 使用技巧读书笔记
 categories:
   - vim
+tags: vim
 ---
 
 ## vim 实用技巧 .
