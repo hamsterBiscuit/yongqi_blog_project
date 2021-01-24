@@ -8,12 +8,12 @@ subtitle: 前端 猫
 description: 永奇的博客
 keywords: 博客 js javascript ts typescript vue react node koa
 author: 永奇
-language:
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: blog.i6miao.cn
+url: http://blog.i6miao.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -32,7 +32,6 @@ skip_render:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -80,7 +79,7 @@ theme: next
 deploy:
   type: git
   message: update
-  repo: root@60.205.217.166:/var/git/blog.git,master
+  repo: root@60.205.217.166:/var/git/blog.git
 
  # feed
 # Dependencies: https://github.com/hexojs/hexo-generator-feed
@@ -90,7 +89,7 @@ feed:
   path: atom.xml
   limit: 20
   hub:
-  content: 
+  content:
 
 search:
   path: search.xml
